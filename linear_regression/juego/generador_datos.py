@@ -11,3 +11,4 @@ df = pd.DataFrame(datos)
 df.to_csv('datos/juego.csv', index=False)
 
 
+#

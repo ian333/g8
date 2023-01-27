@@ -26,8 +26,8 @@ while True:
 # guardar datos de juego en un archivo csv
 datos = {'intentos': [intentos], 'numero_correcto': [numero_a_adivinar]}
 df = pd.DataFrame(datos)
-df.to_csv('datos/juego.csv', mode='a', header=False)
+df.to_csv('datos/simulacion.csv', mode='a', header=False,index=False)
 
-entrenar_modelo('datos/juego.csv')
+entrenar_modelo('datos/simulacion.csv')
 
 
