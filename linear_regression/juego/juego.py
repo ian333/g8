@@ -3,6 +3,8 @@ import pandas as pd
 from modelo import entrenar_modelo
 import pickle
 
+
+
 # generar número aleatorio a adivinar
 numero_a_adivinar = random.randint(1, 100)
 regresion_lineal = pickle.load(open('modelos/modelo_regresion.pkl','rb'))

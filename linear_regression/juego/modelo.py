@@ -27,5 +27,4 @@ def entrenar_modelo(archivo_csv):
     pickle.dump(regresion_lineal, open('modelos/modelo_regresion.pkl', 'wb'))
     pickle.dump(logistic_regression, open('modelos/logistic_regresion.pkl', 'wb'))
 
-entrenar_modelo('datos/juego.csv')
 
