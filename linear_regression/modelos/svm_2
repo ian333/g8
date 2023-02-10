@@ -1,0 +1,19 @@
+import numpy as np
+from sklearn import datasets, svm
+from sklearn.model_selection import train_test_split
+
+# Cargar Digits dataset
+digits = datasets.load_digits()
+X = digits.images.reshape((len(digits.images), -1))
+y = digits.target
+
+# Dividir en conjunto de entrenamiento y prueba
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, stratify=y)
+
+# Ajustar modelo SVM
+model = svm.SVC(kernel='linear')
+model.fit(X_train, y_train)
+
+# Evaluar rendimiento en el conjunto de prueba
+accuracy = model.score(X_test, y_test)
+print("Accuracy:", accuracy)
