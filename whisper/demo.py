@@ -1,7 +1,6 @@
 #aqui ira el codigo de whisper
 
 from IPython.display import HTML, Audio
-from google.colab.output import eval_js
 from base64 import b64decode
 import numpy as np
 
@@ -12,8 +11,13 @@ import ffmpeg
 
 
 Tarea = "Transcript to Language" #@param ["Transcript to Language", "Translate to English"]
+import numpy as np
 
 #estas son las librerias especiales
+
+
+
+
 import numpy as np
 import whisper
 from scipy.io.wavfile import write
