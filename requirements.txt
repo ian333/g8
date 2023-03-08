@@ -9,6 +9,8 @@ ffmpeg-python==0.2.0
 filelock==3.9.0
 fonttools==4.38.0
 future==0.18.3
+h11==0.14.0
+httptools==0.5.0
 huggingface-hub==0.12.1
 idna==3.4
 joblib==1.2.0
@@ -29,6 +31,8 @@ Pillow==9.4.0
 pydantic==1.10.5
 pyparsing==3.0.9
 python-dateutil==2.8.2
+python-dotenv==0.21.1
+python-multipart==0.0.6
 pytz==2022.7.1
 PyYAML==6.0
 regex==2022.10.31
@@ -45,4 +49,8 @@ tqdm==4.64.1
 transformers==4.26.1
 typing_extensions==4.5.0
 urllib3==1.26.14
+uvicorn==0.20.0
+uvloop==0.17.0
+watchfiles==0.18.1
+websockets==10.4
 xgboost==1.7.4
