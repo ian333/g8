@@ -1,1 +1,47 @@
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyw
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Entorno virtual
 venv/
+env/
+.env
+.env.*
+.venv/
+ENV/
+env.bak/
+python_environment*
+
+# Archivos de configuración
+*.ini
+*.cfg
+*.conf
+*.yml
+*.yaml
+*.toml
+
+# Archivos de registro
+*.log
+log/
+
+# Archivos de respaldo
+*~
+*.bak
+*.swp
+*.bak.*
+*.swp.*
+*.backup
+*.back
+*.old
+
+# Otros archivos
+.DS_Store
+Thumbs.db
