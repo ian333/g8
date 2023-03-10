@@ -43,20 +43,6 @@ async def predict_digits(image:UploadFile=File(...)):
     return {"Prediccion":prediction["prediction"]}
 
 
-@app.post("/whisper/transcribe")
-async def audio_to_text(audio:UploadFile=File(...)):
-
-
-    text=await transcribe(audio)
-    # with Image.open(image.file) as img:
-    #     img = img.convert("G").resize((8, 8))
-    #     data = np.asarray(img, dtype=np.float32).reshape(1, -1) / 16.0
-
-    # print(img)
-    # print(data)
-    # prediction = predic_digits(data)
-    request= httpx.post(www.nuestraapi.com/whisper/transcribe)
-    return {"text_audio":f"{text}"}
 
 @app.post("/whisper/translate")
 async def translate(audio:UploadFile=File(...)):
