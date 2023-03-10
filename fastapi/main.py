@@ -32,8 +32,8 @@ def sumatoria(number:int):
 async def predict_digits(image:UploadFile=File(...)):
 
     with Image.open(image.file) as img:
-        img = img.convert("G").resize((8, 8))
-        data = np.asarray(img, dtype=np.float32).reshape(1, -1) / 16.0
+        img = img.convert("L").resize((8, 8))
+        data = np.asarray(img, dtype=np.float32).reshape(1, -1) 
 
     print(img)
     print(data)

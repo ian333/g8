@@ -45,3 +45,6 @@ log/
 # Otros archivos
 .DS_Store
 Thumbs.db
+
+
+*.pem
