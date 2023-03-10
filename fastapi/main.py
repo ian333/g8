@@ -4,7 +4,6 @@ from schemas.predict_schemas import IrisData
 from predict import predict_iris,predic_digits
 from PIL import Image
 import numpy as np
-from utilities import transcribe
 
 app=FastAPI()
 
@@ -42,12 +41,6 @@ async def predict_digits(image:UploadFile=File(...)):
 
     return {"Prediccion":prediction["prediction"]}
 
-
-
-@app.post("/whisper/translate")
-async def translate(audio:UploadFile=File(...)):
-
-    pass
 
 
 @app.post("/login/")
